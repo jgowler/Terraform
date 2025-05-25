@@ -4,7 +4,7 @@ This repository contains **Terraform configurations** designed to automate deplo
 
 **Important Note:** All **sensitive information** such as credentials, subscription IDs, and access keys should be stored in the `variables.tf` file. This file is **not included** in any Terraform configurations present in this repository, ensuring security and preventing accidental exposure.
 
-## Current Projects  
+## Projects:  
 
 ### Hub-and-Spoke Network  
 A **secure network design** that enhances connectivity and segmentation through:  
@@ -30,3 +30,11 @@ A **security framework** that strengthens identity and access controls across **
 - **Allowed Countries Policy:** Restricts authentication to specific geographic locations  
 - **AVD MFA Policy:** Requires multi-factor authentication for high-risk Azure Virtual Desktop sign-ins  
 - **Named Location Configuration:** Defines trusted country-based access rules  
+
+### VPN Deployment  
+A **secure site-to-site VPN solution** providing encrypted connectivity between on-premises and Azure:  
+- **Resource Group:** Isolated deployment for VPN services  
+- **Virtual Network:** Dedicated **VPN VNet** with address segmentation  
+- **VPN Gateway:** Route-based VPN with static public IP allocation  
+- **Local Network Gateway:** Configured to establish site-to-site connectivity  
+- **IPsec Connection:** Uses **IKEv2** protocol with a **securely generated shared key**  
