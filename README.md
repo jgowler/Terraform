@@ -25,10 +25,8 @@ A **scalable storage solution** that provisions an Azure Storage Account with ma
 - **Secure configurations**, including TLS1.2 and large file share support  
 - **Provisioning of FileShare1 and FileShare2**, each with defined quota limits  
 
-## Upcoming Projects  
-
 ### Conditional Access Policies  
-A robust security framework that strengthens **identity and access management**, leveraging **Azure Active Directory (AAD)** to enforce policies based on:  
-- **Device compliance** to ensure security standards are met  
-- **User location and risk assessment** for adaptive authentication  
-- **Multi-Factor Authentication (MFA)** to protect against unauthorized access  
+A **security framework** that strengthens identity and access controls across **Azure AD**:  
+- **Allowed Countries Policy:** Restricts authentication to specific geographic locations  
+- **AVD MFA Policy:** Requires multi-factor authentication for high-risk Azure Virtual Desktop sign-ins  
+- **Named Location Configuration:** Defines trusted country-based access rules  
